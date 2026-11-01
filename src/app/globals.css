@@ -1,0 +1,203 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-outfit), ui-sans-serif, system-ui;
+  --font-mono: var(--font-fira-code), ui-monospace, SFMono-Regular;
+  
+  --color-accent: var(--accent-color);
+  --color-accent-hover: var(--accent-hover);
+  --color-bg-color: var(--bg-color);
+  --color-fg-color: var(--fg-color);
+  --color-terminal-bg: var(--terminal-bg);
+  --color-window-bg: var(--window-bg);
+  --color-dock-bg: var(--dock-bg);
+  --color-topbar-bg: var(--topbar-bg);
+  --color-border-color: var(--border-color);
+}
+
+:root {
+  /* Default Theme (Ubuntu) */
+  --bg-color: #300a24;
+  --fg-color: #ffffff;
+  --accent-color: #e95420;
+  --accent-hover: #fc7646;
+  --border-color: rgba(233, 84, 32, 0.25);
+  --terminal-bg: rgba(48, 10, 36, 0.9);
+  --window-bg: rgba(48, 10, 36, 0.75);
+  --dock-bg: rgba(255, 255, 255, 0.08);
+  --topbar-bg: rgba(27, 6, 20, 0.95);
+}
+
+.theme-ubuntu {
+  --bg-color: #300a24;
+  --fg-color: #ffffff;
+  --accent-color: #e95420;
+  --accent-hover: #fc7646;
+  --border-color: rgba(233, 84, 32, 0.3);
+  --terminal-bg: rgba(48, 10, 36, 0.9);
+  --window-bg: rgba(48, 10, 36, 0.75);
+  --dock-bg: rgba(255, 255, 255, 0.08);
+  --topbar-bg: rgba(27, 6, 20, 0.95);
+}
+
+.theme-kali {
+  --bg-color: #0f0f14;
+  --fg-color: #a9b1d6;
+  --accent-color: #33ccff;
+  --accent-hover: #73e6ff;
+  --border-color: rgba(51, 204, 255, 0.3);
+  --terminal-bg: rgba(15, 15, 20, 0.95);
+  --window-bg: rgba(20, 20, 28, 0.8);
+  --dock-bg: rgba(20, 20, 28, 0.3);
+  --topbar-bg: rgba(10, 10, 14, 0.95);
+}
+
+.theme-dracula {
+  --bg-color: #282a36;
+  --fg-color: #f8f8f2;
+  --accent-color: #ff79c6;
+  --accent-hover: #ff92df;
+  --border-color: rgba(255, 121, 198, 0.3);
+  --terminal-bg: rgba(40, 42, 54, 0.95);
+  --window-bg: rgba(40, 42, 54, 0.8);
+  --dock-bg: rgba(40, 42, 54, 0.3);
+  --topbar-bg: rgba(30, 31, 41, 0.95);
+}
+
+.theme-nord {
+  --bg-color: #2e3440;
+  --fg-color: #d8dee9;
+  --accent-color: #88c0d0;
+  --accent-hover: #8fbcbb;
+  --border-color: rgba(136, 192, 208, 0.3);
+  --terminal-bg: rgba(46, 52, 64, 0.95);
+  --window-bg: rgba(59, 66, 82, 0.8);
+  --dock-bg: rgba(46, 52, 64, 0.3);
+  --topbar-bg: rgba(36, 41, 51, 0.95);
+}
+
+.theme-gruvbox {
+  --bg-color: #282828;
+  --fg-color: #ebdbb2;
+  --accent-color: #fabd2f;
+  --accent-hover: #fe8019;
+  --border-color: rgba(250, 189, 47, 0.3);
+  --terminal-bg: rgba(40, 40, 40, 0.95);
+  --window-bg: rgba(40, 40, 40, 0.85);
+  --dock-bg: rgba(60, 56, 54, 0.3);
+  --topbar-bg: rgba(29, 32, 33, 0.95);
+}
+
+.theme-catppuccin {
+  --bg-color: #1e1e2e;
+  --fg-color: #cdd6f4;
+  --accent-color: #cba6f7;
+  --accent-hover: #f5c2e7;
+  --border-color: rgba(203, 166, 247, 0.3);
+  --terminal-bg: rgba(30, 30, 46, 0.95);
+  --window-bg: rgba(30, 30, 46, 0.8);
+  --dock-bg: rgba(17, 17, 27, 0.3);
+  --topbar-bg: rgba(17, 17, 27, 0.95);
+}
+
+.theme-hacker {
+  --bg-color: #000000;
+  --fg-color: #00ff00;
+  --accent-color: #00ff00;
+  --accent-hover: #33ff33;
+  --border-color: rgba(0, 255, 0, 0.4);
+  --terminal-bg: rgba(0, 0, 0, 0.95);
+  --window-bg: rgba(0, 0, 0, 0.9);
+  --dock-bg: rgba(0, 255, 0, 0.05);
+  --topbar-bg: rgba(0, 0, 0, 0.95);
+}
+
+.theme-light {
+  --bg-color: #f3f4f6;
+  --fg-color: #1f2937;
+  --accent-color: #2563eb;
+  --accent-hover: #1d4ed8;
+  --border-color: rgba(37, 99, 235, 0.2);
+  --terminal-bg: rgba(255, 255, 255, 0.95);
+  --window-bg: rgba(243, 244, 246, 0.85);
+  --dock-bg: rgba(209, 213, 219, 0.3);
+  --topbar-bg: rgba(229, 231, 235, 0.95);
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-color);
+}
+
+/* CRT Screen Effect Overlay */
+.crt-overlay::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 99999;
+  background-size: 100% 4px, 6px 100%;
+  pointer-events: none;
+}
+
+/* Scanline flicker simulation */
+@keyframes crt-flicker {
+  0% { opacity: 0.975; }
+  50% { opacity: 1; }
+  100% { opacity: 0.98; }
+}
+
+.crt-flicker {
+  animation: crt-flicker 0.15s infinite;
+}
+
+/* Glassmorphism Window Styling */
+.window-glass {
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+}
+
+/* Input blinking block cursor */
+.terminal-cursor {
+  display: inline-block;
+  width: 8px;
+  height: 15px;
+  background-color: currentColor;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  from, to { background-color: transparent; }
+  50% { background-color: currentColor; }
+}
+
+/* Noise background texture */
+.noise-bg {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Selection Color customization */
+::selection {
+  background-color: var(--accent-color);
+  color: #ffffff;
+}
