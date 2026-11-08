@@ -15,38 +15,88 @@ interface Certification {
 }
 
 export const CertificationsWindow: React.FC = () => {
-  const certs: Certification[] = [
-    {
-      title: 'Certified Kubernetes Administrator (CKA)',
-      issuer: 'The Linux Foundation',
-      date: 'Dec 2025',
-      idCode: 'CKA-8842-1204',
-      link: 'https://verify.linuxfoundation.org',
-      badgeBg: 'bg-blue-500/10',
-      badgeText: 'text-blue-400',
-      abbr: 'CKA'
-    },
-    {
-      title: 'AWS Certified Solutions Architect – Associate',
-      issuer: 'Amazon Web Services (AWS)',
-      date: 'Aug 2024',
-      idCode: 'AWS-ASA-9942-EXAMPLE',
-      link: 'https://aws.amazon.com/verification',
-      badgeBg: 'bg-orange-500/10',
-      badgeText: 'text-orange-400',
-      abbr: 'AWS'
-    },
-    {
-      title: 'HashiCorp Certified: Terraform Associate',
-      issuer: 'HashiCorp',
-      date: 'Feb 2025',
-      idCode: 'HC-TFA-0123-EXAMPLE',
-      link: 'https://credly.com/verify-terraform',
-      badgeBg: 'bg-purple-500/10',
-      badgeText: 'text-purple-400',
-      abbr: 'HASH'
-    }
-  ];
+const certs: Certification[] = [
+  {
+    title: 'Oracle SQL Certificate',
+    issuer: 'Great Learning Academy',
+    date: '2024',
+    idCode: 'ORACLE-SQL-2024',
+    link: '#',
+    badgeBg: 'bg-red-500/10',
+    badgeText: 'text-red-400',
+    abbr: 'SQL'
+  },
+  {
+    title: 'Linux Certification',
+    issuer: 'Naresh IT Hyderabad',
+    date: '2024',
+    idCode: 'NARESHIT-LINUX-2024',
+    link: '#',
+    badgeBg: 'bg-green-500/10',
+    badgeText: 'text-green-400',
+    abbr: 'LNX'
+  },
+  {
+    title: 'AWS Cloud Practitioner Essential',
+    issuer: 'Simplilearn SkillUp',
+    date: '2026',
+    idCode: '9896881_10033174',
+    link: 'https://simpli-web.app.link/e/uo4LG52CT7b',
+    badgeBg: 'bg-orange-500/10',
+    badgeText: 'text-orange-400',
+    abbr: 'AWS'
+  },
+  {
+    title: 'SQL (Basic) Certification',
+    issuer: 'HackerRank',
+    date: '2025',
+    idCode: '0D03423D0F85',
+    link: 'https://drive.google.com/file/d/1N-s2MTkEBzbQQ6rFL_kuWE-ZxlHXC4SH/view?usp=drive_link',
+    badgeBg: 'bg-emerald-500/10',
+    badgeText: 'text-emerald-400',
+    abbr: 'SQL'
+  },
+  {
+    title: 'SQL (Intermediate) Certification',
+    issuer: 'HackerRank',
+    date: '2025',
+    idCode: 'AE88E8ED19AD',
+    link: 'https://drive.google.com/file/d/1keAXzTbAQMlFpK79gWlsbfUx1EUDt2Ju/view?usp=drive_link',
+    badgeBg: 'bg-green-500/10',
+    badgeText: 'text-green-400',
+    abbr: 'SQL'
+  },
+  {
+    title: 'Web Development Internship',
+    issuer: 'PHN Technology Pvt. Ltd.',
+    date: '2023',
+    idCode: 'PHN_20230616360',
+    link: 'https://drive.google.com/file/d/1OSCuVH4tu3YpDAxSuWeC9LedCKG7fOWh/view?usp=drive_link',
+    badgeBg: 'bg-blue-500/10',
+    badgeText: 'text-blue-400',
+    abbr: 'WEB'
+  },
+  {
+    title: 'Project Management Fundamentals',
+    issuer: 'IBM SkillsBuild',
+    date: '2023',
+    idCode: 'ILB-DNRVRVRGKDNQPQ9X',
+    link: 'https://drive.google.com/file/d/1FSmwCkhf5RXeD0WOTJcopFWKfZ-eLTIS/view?usp=drive_link',
+    badgeBg: 'bg-purple-500/10',
+    badgeText: 'text-purple-400',
+    abbr: 'IBM'
+  },
+  {
+    title: 'MaTPO Aptitude Idol-2023',
+    issuer: 'MaTPO / Directorate of Technical Education, Maharashtra',
+    date: '2023',
+    idCode: 'MaTPO/MAI-2023/8834',
+    link: 'https://drive.google.com/file/d/1j8QrAyfXhA6IfWcF79e7ALg2AeFtucgq/view?usp=drive_link',
+    badgeBg: 'bg-yellow-500/10',
+    badgeText: 'text-yellow-400',
+    abbr: 'APT'
+  }
+];
 
   return (
     <div className="w-full h-full p-6 overflow-y-auto select-none space-y-6">
